@@ -1,0 +1,18 @@
+@media screen and (max-width:530px) {
+    .typewriter h1{
+        font-size: large;
+    }
+    
+}
+@media screen and (max-width:400px) {
+    .typewriter h1{
+        font-size: small;
+    }
+    
+}
+@media screen  and (max-width:300px){
+    .typewriter h1{
+        font-size: x-small;
+    }
+    
+}

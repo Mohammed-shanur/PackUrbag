@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="respo.css">
+</head>
+<body>
+    <header>
+        <nav>
+          
+                <div class="A">
+                    <h1>PackUrBags</h1>
+                </div>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="search">
+                    <input type="text" name="" id="df" placeholder="Search for any destination!" onkeyup="filterFunction()">
+                    <button class="btn">search</button>
+                </div>
+            
+        </nav>
+    </header>
+    <main id="card1">
+        <!-- <div class="slider" >
+            <img src="https://source.unsplash.com/1600x500/?tourism" alt="">
+        </div> -->
+        
+      </div>
+      <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="https://source.unsplash.com/1600x500/?nature" style="width:100%">
+            <div class="text">Nature</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="https://source.unsplash.com/1600x500/?adventure" style="width:100%">
+            <div class="text">Adventure</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://source.unsplash.com/1600x500/?god" style="width:100%">
+            <div class="text">Devotion</div>
+          </div>
+
+          <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img src="https://source.unsplash.com/1600x500/?tour" style="width:100%">
+              <div class="text">Travel</div>
+            </div>
+          
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <br>
+        <h3>Explore the places you love!</h3>
+       
+        <div class="card">
+            <div class="card1" >
+              <!-- <a href=""><p>Kerala</p></a> -->
+              <img src="Kerala_Tourism.jpg" alt="">
+              <a href="kerala.html" class="centered">Kerala</a>
+               
+               
+            </div>
+            <div class="card1" >
+              <img src="download.jpg" alt="">
+                <a href="Rajasthan.html" class="centered">Rajasthan<p></p></a>
+             </div>
+             <div class="card1" >
+              <img src="GettyImages-450784769-58f7b8cd3df78ca1597ccf9c.jpg" alt="">
+                <a href="uttarakhand.html" class="centered">Uttarakhand</a>
+             </div>
+             <div class="card1" >
+              <img src="download (1).jpg" alt="">
+                <a href="himachal.html" class="centered">Himachal Pradesh</a>
+             </div>
+
+            </div>
+            <br>
+            <div class="card">
+                <div class="card1" >
+                <img src="MIZORAM.jpg" alt="" srcset="">
+                <a href="mizoram.html" class="centered" >Mizoram</a>
+                   
+                </div>
+                <div class="card1" >
+                    <img src="NAGALAND.jpg" alt="">
+                    <a href="nagaland.html" class="centered">Nagland</a>
+                 </div>
+                 <div class="card1" >
+                  <img src="Tamil.jpg" alt="">
+                    <a href="tamil.html" class="centered">TamilNadu</a>
+                 </div>
+                 <div class="card1" >
+                  <img src="https://th.bing.com/th/id/OIP.xlNl5e-ak24oF_P8FaUfMQHaE8?w=248&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+                    <a href="Telangana.html" class="centered">Telangana</a>
+                 </div>
+                 </div>
+              <script>
+                function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("df");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("card1");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+      
+    } else {
+      a[i].style.display = "none";
+      
+    }
+  }
+}
+              </script>
+              <script>
+                let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+              </script>
+              
+    </main>
+    <footer>
+        <h2>PackUrBags copyrights &copy; 2023</h2>
+        <h3>Hyderabad, Telanagana , India</h3>
+        <h4>&phone;040-3423334 </h4>
+        
+    </footer>
+</body>
+</html>

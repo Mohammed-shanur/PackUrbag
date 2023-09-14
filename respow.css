@@ -1,0 +1,60 @@
+@media screen and (max-width:1380px) {
+    .card{
+        height: auto;
+        width: auto;
+        background-color: white;
+    }
+    .text{
+        position: relative;
+    }    
+    
+}
+@media screen and (max-width:900px) {
+    .search input{
+        margin: auto;
+        width: auto;
+    }
+    .typewriter h1{
+        font-size: large;
+    }
+   
+}
+@media screen and (max-width:700px) {
+    nav{
+        height: 20vh;
+        flex-direction: column;
+    }
+    footer{
+        height: 30vh;
+    }
+    
+
+    
+}
+@media screen and (max-width:600px) {
+    .typewriter h1{
+        font-size: small;
+    }
+    
+}
+@media screen and (max-width:400px) {
+    .card0{
+        width:300px;
+        /* height: 250px; */
+    }
+    .card0:hover{
+        width: 270px;
+        /* height: 230px; */
+    }
+    .typewriter h1{
+        font-size: smaller;
+    }
+    .typewriter h1{
+        letter-spacing: normal;
+    }
+    
+}
+@media screen and (max-width:300px) {
+
+    
+}

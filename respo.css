@@ -1,0 +1,48 @@
+@media screen  and (max-width:1318px){
+    .card1 img{
+        border-radius: 0;
+    }
+    .card{
+        overflow: scroll;
+    }
+}
+@media screen and (max-width:900px){
+   .search input{
+    margin: 0;
+   }
+ 
+    
+}
+@media screen and (max-width: 850px ){
+    .search input{
+        width: auto;
+    }
+   
+}
+@media screen and (max-width:680px ){
+    .card1 img{
+        border: none;
+    }
+   
+    nav {
+        height: 20vh;
+        flex-direction: column;
+    }
+ 
+}
+@media screen and (max-width:500px){
+    .card1 img{
+        width: 130px;
+        height: 130px;
+        /* margin: 0 5px; */
+    }
+    .card1 img:hover{
+        width: 120px;
+        height: 120px;
+
+    }
+    footer{
+        height: 20vh;
+    }
+    
+}

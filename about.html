@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="responsive1.css">
+</head>
+<body>
+    <header>
+        <nav>
+           
+                <div class="A">
+                    <h1>PackUrBags</h1>
+                </div>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="#">About</a></li> -->
+                <li><a href="contact.html">Contact</a></li>
+                <ul></ul>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Destinations</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                      <a href="kerala.html">Kerala</a>
+                      <a href="Rajasthan.html">Rajasthan</a>
+                      <a href="uttarakhand.html">Uttarakhand</a>
+                      <a href="#">Jammu Kashmir</a>
+                      <a href="#custom">Mizoram</a>
+                      <a href="#support">Nagaland</a>
+                      <a href="#tools">Tamilnadu</a>
+                    </div>
+                  </div>
+          
+        </nav>
+    </header>
+   <main> <br>
+    <div class="cards" style="background-image: url(https://source.unsplash.com/1600x500/?tourism);" >
+       
+       
+            <div class="typewriter">
+                <h1>About Us</h1>
+              </div>     
+              <div >
+                <p>We at Packurbags help people explore  they love!</p>
+              </div> 
+                   
+                   
+               
+            </div>
+        
+        <!-- </div> -->
+        
+    <!-- </div> -->
+    <script>
+        /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+    </script>
+   </main>
+    <footer>
+        <h2>PackUrBags copyrights &copy; 2023</h2>
+        <h3>Hyderabad, Telanagana , India</h3>
+        <h4>&phone;040-3423334 </h4>
+        <h5>Follow facebook Instagram</h5>
+    </footer>
+</body>
+</html>

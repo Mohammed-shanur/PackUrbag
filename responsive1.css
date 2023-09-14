@@ -1,0 +1,18 @@
+@media screen and (max-width:1260px){
+    .typewriter p{
+        font-size: large;
+    }
+    
+}
+@media screen and (max-width:500px){
+    /* .cards{
+        width: auto;
+    } */
+    nav{
+        height: 20vh;
+        flex-direction: column;
+    }
+    footer{
+        height: 20vh;
+    }
+}

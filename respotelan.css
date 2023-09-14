@@ -1,0 +1,13 @@
+@media screen  and (max-width:1270px){
+    .card{
+        height: auto;
+        background-color: white;
+    }
+    
+}
+@media screen and (max-width:360px) {
+    .typewriter h1{
+        font-size: x-small;
+    }
+    
+}
